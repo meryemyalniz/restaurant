@@ -13,31 +13,73 @@
             <img src="c:\Users\Meryem\OneDrive\Desktop\Yeni klasör (2)\png-clipart-indian-cuisine-thai-cuisine-chinese-cuisine-italian-cuisine-roti-cooking-pot-love-white.png" alt="logo"/>
         </a>
         <nav class="navbar">
-            <a href="#" class="active">Ana Sayfa</a>
-            <a href="#">Hakkında </a>
-            <a href="#">Menü </a>
-            <a href="#">Ürünler </a>
-            <a href="#">İnceleme </a>
-            <a href="#">İletişim </a>
-            <a href="#">Bloglar </a>
+            <a href="#home" class="active">Ana Sayfa</a>
+            <a href="#about">Hakkımızda </a>
+            <a href="#menu">Menü </a>
+            <a href="#products">Ürünler </a>
+            <a href="#review">Yorumlar </a>
+            <a href="#contact">İletişim </a>
+            <a href="#blogs">Bloglar </a>
         </nav>
 
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
-            <button>
+            <button id="cart-btn">
                 <i class="fas fa-shopping-cart"></i>
             </button>
-            <button>
+            <button id="menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
+        <div class="search-form ">
+            <input type="text" class="search-input" id="search-box" placeholder="search here"/>
+            <i class="fas fa-search"></i>
+            
+        </div>
+
+         <div class="cart-items-container ">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="c:\Users\Meryem\OneDrive\Desktop\Yeni klasör (2)\OIP.webp" alt="menu"/>
+                <div class="content">
+                    <h3>Sebzeli Pizza</h3>
+                    <div class="price">299.99 TL </div>
+                </div>
+             </div>
+              <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="c:\Users\Meryem\OneDrive\Desktop\Yeni klasör (2)\hamburger-food-isolated-on-transparent-background-burger-png-generative-ai_667511-3765.avif" alt="menu"/>
+                <div class="content">
+                    <h3>Cheeseburger</h3>
+                    <div class="price">349.99 TL</div>
+                </div>
+             </div>
+              <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="c:\Users\Meryem\OneDrive\Desktop\Yeni klasör (2)\pizza-png-fatias.png" alt="menu"/>
+                <div class="content">
+                    <h3>Mantarlı Pizza</h3>
+                    <div class="price">159.99 TL</div>
+                </div>
+             </div>
+              <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="c:\Users\Meryem\OneDrive\Desktop\Yeni klasör (2)\classic-cheeseburger-ai-generative-free-png.webp " alt="menu"/>
+                <div class="content">
+                    <h3>Classic Hamburger</h3>
+                    <div class="price">319.99</div>
+                </div>
+             </div>
+            <a href="#" class="btn">Satın Al! </a>
+         </div>
+
     </header>
      <!--! header section end-->
 
       <!--! home section start-->
-      <section class="home">
+      <section class="home" id="home">
        <div class="content">
          <h3>EXPRESS EVE TESLİM</h3>
         <p>En taze pizza ve hamburgerleri hızlıca kapınıza getiriyoruz. Şimdi sipariş verin, lezzeti beklemeyin!</p>
@@ -47,7 +89,7 @@
       <!--! home section end-->
 
       <!--! menu section start-->
-     <section class="menu">
+     <section class="menu" id="menu">
         <h1 class="heading">Me<span>nü</span></h1>
         <div class="box-container">
             <div class="box">
@@ -99,7 +141,7 @@
       <!--! menu section end-->
 
       <!--! products section start-->
-<section class="products">
+<section class="products" id="products">
     <h1 class="heading">ürün<span>ler</span></h1>
     <div class="box-container">
         <div class="box">
@@ -163,7 +205,7 @@
       <!--! products section end-->
 
       <!--! about section start-->
-    <section class="about">
+    <section class="about" id="about">
         <h1 class="heading">hakkı<span>mızda</span></h1>
         <div class="row">
              <div class="content">
@@ -189,7 +231,7 @@
       <!--! about section end-->
 
       <!--! review section start-->
-      <section class="review">
+      <section class="review" id="review">
         <h1 class="heading">yorum<span>lar</span></h1>
         <div class="box-container">
             <div class="box">
@@ -236,7 +278,7 @@
       <!--! review section end-->
 
      <!--! contact section start-->
-<section class="contact">
+<section class="contact" id="contact">
   <h1 class="heading">bize <span>ulaşın</span></h1>
   <div id="footer_left" class="row">
     <div class="map-container">
@@ -266,7 +308,7 @@
 <!--! contact section end-->
 
 <!--! blogs section start-->
-<section class="blogs">
+<section class="blogs" id="blogs">
     <h1 class="heading">bl<span>og</span></h1>
     <div class="box-container">
         <div class="box">
@@ -326,7 +368,7 @@
 
     <div class="links">
         <a href="#" class="active">Ana Sayfa</a> 
-        <a href="#">Hakkında</a> 
+        <a href="#">Hakkımızda</a> 
         <a href="#">Menü</a> 
         <a href="#">Ürünler</a> 
         <a href="#">İnceleme</a> 
@@ -338,6 +380,8 @@
     </div>
    </section>
 <!--! footer section end-->
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
